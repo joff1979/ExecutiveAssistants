@@ -42,8 +42,8 @@
 		<!-- TEST-->
 	<section id="container">
 		<section id="sidebar">
-			<h3>Welcome to Executive Assistants</h3>
-			<p>A newly created company, founded in March 2011 by Alexandra Reynolds, a senior level managing executive assistant with over 10 years experience at Board Level.</p>
+			<h3>Welcome to <br/>Executive Assistants</h3>
+			<p>Founded in March 2011 by Alexandra Reynolds, a senior level managing executive assistant with over 10 years board level experience.</p>
 			<section id="links">
 				<a id="linkedin" href="http://uk.linkedin.com/pub/alexandra-reynolds/30/243/279">
 					<img src="http://www.linkedin.com/img/webpromo/btn_profile_greytxt_80x15.png" width="80" height="15" border="0" alt="View Jamie Rollinson's profile on LinkedIn">
@@ -51,15 +51,18 @@
 				<a href="http://http://www.facebook.com/ExecutiveAssistantsLtd">
 					<img src="img/facebook.jpg" />
 				</a>
+				
+				<a href="https://twitter.com/ExecAssistants" class="twitter-follow-button" data-show-count="false">Follow @ExecAssistants</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 			</section>
 		</section>
 		<nav class="clearfix">
 			<ul>
-				<li>Home</li>
-				<li>Services</li>
-				<li>Biography</li>
-				<li>Charges</li>
-				<li>Contact</li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Services.html">Services</a></li>
+				<li><a href="Biography.html">Biography</a></li>
+				<li><a href="Charges.html">Charges</a></li>
+				<li><a href="Contact.html">Contact</a></li>
 			</ul>
 		</nav>
 		<!--TEST-->
@@ -81,10 +84,10 @@
 		</section>
 		<section id="vision">
 
-			<h1>The vision: </h1>
-			<p>to provide high level professional support services, in particular senior level executive assistance, personal assistance and administrative services  to small companies and individuals who do not want the overheads of employing a full complement business support team, but who require all the support such  a team would provide (and more).</p>
-			<h1>The values:</h1>
-			<p>work hard, deliver excellence, think imaginatively and add real value.</p>
+			<h1>The Vision: </h1>
+			<p>To provide high level professional support services, in particular senior level executive assistance, personal assistance and administrative services  to small companies and individuals who do not want the overheads of employing a full complement business support team, but who require all the support such  a team would provide (and more).</p>
+			<h1>The Values:</h1>
+			<p>Work hard, deliver excellence, think imaginatively and add real value.</p>
 		</section>
 	
 	</section>
@@ -97,9 +100,10 @@
   <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
    <script type="text/javascript">
     $(window).load(function() {
-        $('#slider').nivoSlider();
+        $('#slider').nivoSlider({effect: 'fold', controlNav: false, directionNav: false});
     });
     </script>
+	
   <!-- scripts concatenated and minified via build script -->
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>

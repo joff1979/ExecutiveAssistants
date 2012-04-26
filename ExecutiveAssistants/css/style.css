@@ -218,6 +218,16 @@ td { vertical-align: top; }
    Author:Jamie Rollinson
    ========================================================================== */
 
+   body{
+   padding-top:20px;
+   margin:0 auto;  
+   
+   }
+   
+   a,a:link,a:active,a:visited{
+	text-decoration:none;
+	}
+	
  section, nav{
 	float: left;
 	}
@@ -226,10 +236,11 @@ td { vertical-align: top; }
 #sidebar
 	{
 	position:relative;
-	background-color:#ebaeae;
+	background-color:#f5d7d7;
 	width:253.627px;
-	height:674.899px;
+	height:640px;
 	margin-right:30px;
+
 	}
 	
 #sidebar h3
@@ -262,6 +273,16 @@ nav ul li {
 	font-weight:bold;
 }  
 
+nav ul li a{
+	color:#7F5151;
+	}
+
+nav ul li a:hover {  
+	color: white;  
+	background:#7F5151;
+	
+}  
+
 #slider
 {
 	width:711.917px;
@@ -270,6 +291,11 @@ nav ul li {
 #vision
 {
 	width:711.917px;
+	}
+	
+#vision h1, #vision p
+{
+	margin: 10px 0 10px 0;
 	}
 
 #links
