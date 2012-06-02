@@ -232,7 +232,7 @@ td { vertical-align: top; }
 	float: left;
 	}
   
-   
+  /*
 #sidebar
 	{
 	position:relative;
@@ -255,26 +255,39 @@ td { vertical-align: top; }
 	padding:25px 10px 35px 35px;
 	color:#80173e;
 	}
+	*/
 
-nav {
-	padding-left:25px;
-	width:711.917px;
-	height:43px;
+nav
+{
+	padding-bottom: 10px;
+	border-width:0px 10px 0.5px 10px;
+	border-color: #f4d7d7;
+	border-style:solid;
 	}
+	
+nav ul { 
+	width:1004px;
+	
+	list-style:none;
+	  margin:0;
+	  padding:0;
+	  text-align:center;
+}  
 
 nav ul li { 
-	padding: 10px 30px 15px 10px;
 	float: left;  
-	width:100px;
+	display:inline;
 	height:18px;
-	float: left;
-	font-size:18px;
-	color:#80173e;
-	font-weight:bold;
+	padding: 10px 0px 10px 0px;
 }  
 
 nav ul li a{
+	width:200px;
+	display:inline-block;
 	color:#7F5151;
+	font-size: 20px;
+	font-weight: bold;
+	
 	}
 
 nav ul li a:hover {  
@@ -300,17 +313,148 @@ nav ul li a:hover {
 
 #links
 {
-	position:absolute;
 	bottom:0px;
 }
 
-#links a img
+#links a img, #links iframe
 {
-	padding: 0 0 25px 25px;
+	padding: 0px 0 25px 25px;
 	}
 
-	
+#container{
+	width:1004px;
+	border-style:solid;
+	border-width:0px 10px 10px 10px;
+	border-color: #f4d7d7;
+	-webkit-border-bottom-right-radius: 10px;
+	   -moz-border-radius-bottomright:  10px;
+	        border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	   -moz-border-radius-bottomleft:  10px;
+	        border-bottom-left-radius: 10px;
+	margin-bottom: 10px;
+	}
 
+#container p{
+	font-size:18px;
+	padding: 20px 40px 20px 40px;
+	}
+#container p
+{
+	text-align: left;
+}
+
+ #container h2,#container h3
+ {
+	padding-left:20px;
+	text-align: left;
+}
+#container h2
+{
+	margin-bottom: 0px;
+	}
+
+#mainQuote
+{
+	color: #872548;
+	font-size: 25px;
+	font-weight: normal;
+	color: #872548;
+}
+	
+.splitter
+{
+	margin: 39px 20px 39px 0px;
+	display: block;
+	float:left;
+	}
+	
+.overlayHeader
+{
+	float:left;
+	text-align: left;
+	color: #872548;
+	padding-right:20px;
+}
+
+.mainHeader
+{
+	text-align: left;
+	color: #872548;
+}
+
+#title
+{
+	font-size: 30px;
+	
+	}
+
+#clickToEnter
+{
+	float: right;
+	display:none;
+	Padding: 20px 0 0 0 0;
+}
+
+.splitter2
+{
+	margin: 39px 20px 45px 0px;
+	display: block;
+	float:right;
+	display:none;
+	}
+
+#fullContainer
+{
+	width:950px;
+	display:none;
+	height:500px;
+
+	}
+
+#Quote1
+{
+	padding: 20px 10px 10px 60px;
+	display:none;
+
+	}
+
+#Quote2
+{
+	padding: 40px 100px 20px 140px;
+	display:none;
+
+	}
+	
+#inline
+{
+display:none;
+
+	}
+		
+
+/* Services Page*/
+
+.twoColumn
+{
+	width:502px;
+}
+
+#container .twoColumn p
+{
+	padding: 0px 20px 5px 20px;
+	
+}
+
+.twoColumn img
+{
+	padding: 10px;
+	}
+
+.bigText
+{
+	font-size: 24px;
+	}
 
 
 /* ==|== media queries ======================================================

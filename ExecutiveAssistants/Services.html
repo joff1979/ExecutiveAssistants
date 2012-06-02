@@ -51,46 +51,26 @@
 	</nav>
 	
 	<section id="container">
-		
-		<h2 class="mainHeader">Welcome to Executive Assistants</h2>
-		<p>Executive Assistants Ltd provides high level professional support services in particular
-		senior level executive assistance, personal assistance and administrative & support services 
-		to small companies and individuals who do not want the overheads of employing a full complement
-		business support team, but who require all the support such a team would provide (and more).</p>
-		<!--<img class="splitter"  src="img/splitter.png" />-->
-		<h3 id="mainQuote">It's values - work hard, deliver excellence, think imaginatively and add real value.</h3>
-		<!--<img class="splitter"  src="img/splitter.png" />-->
-		<p>Alexandra Reynolds established Executive Assistants Ltd in March 2011.  Prior to that, 
-		Alexandra spent 12 years at Herbert Smith LLP, 9 years of which working as Managing Executive 
-		Assistant to the firm's Senior Partner, the now Lord Gold.</p>
-		
-		
-		<!--TEST
-		<section class="slider-wrapper theme-default">
-			<section id="slider" class="nivoSlider">
-				<img  src="img/slide1.png" />
-				<img  src="img/slide2.png" />
-				<img  src="img/slide3.png" />
-				<img  src="img/slide4.png" />
-				<img  src="img/slide5.png" />
-				<img  src="img/slide6.png" />
-				<img  src="img/slide7.png" />
-				<img  src="img/slide8.png" />
-				<img  src="img/slide9.png" />
-				<img  src="img/slide10.png" />
-				<img  src="img/slide11.png" />
-				<img  src="img/slide12.png" />
-			</section>
+		<section class="twoColumn">
+			<h2 class="mainHeader">Services</h2>
+			<p>Executive Assistants works <em class="bigText">virtually</em>, from remote locations, but can also provide
+				on-site support on an ad hoc basis if and when required. </p>
+				
+			<p>	Services are fully <em class="bigText">tailored</em> to the clients' needs, the aim being to 
+				provide as much or as little support, at the right level, as and when 
+				required by the client.</p>
+			<p>	Services can be provided on a <em class="bigText">regular</em> on-going basis, on a <em class="bigText">project</em> basis or 
+				simply on an ad hoc basis.</p>
+			<p>	<em class="bigText">Support</em> can be provided at various levels - basic administration, 
+				secretarial, as a personal assistant, a project manager and also at a 
+				managing executive level.  </p>
+			</p>
 		</section>
-		<section id="vision">
+		<section class="twoColumn">
+			<img id="quotes" src="img/servequote.png" alt="Image" />
+		</section>
+		
 
-			<h1>The Vision: </h1>
-			<p>To provide high level professional support services, in particular senior level executive assistance, personal assistance and administrative services  to small companies and individuals who do not want the overheads of employing a full complement business support team, but who require all the support such  a team would provide (and more).</p>
-			<h1>The Values:</h1>
-			<p>Work hard, deliver excellence, think imaginatively and add real value.</p>
-		</section>-->
-		
-		
 	</section>
 	
 	<section id="links">
@@ -105,59 +85,15 @@
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</section>
 	
-	<a id="inline" href="#fullContainer">This shows content of element who has id="data"</a>
-	<section id="fullContainer">
-		<img class="splitter runway"  src="img/splitter.png" />
-		<h1 class="overlayHeader" id="title">Welcome to Executive Assistants</h1>
-		<img id="Quote1" src="img/quote1.png" />
-		<img id="Quote2" src="img/quote2.png" />
-		<img class="splitter2 clearfix runway" src="img/splitter.png" />
-		<h1 id="clickToEnter" class="overlayHeader">Click To to find out more</h1>
-		
-	</section>
-  <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
+	 <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
 	
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-  <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
-  <script type="text/javascript" src="js/jquery.fancybox.js?v=2.0.6"></script>
-   <script type="text/javascript">
-    $(window).load(function() {
+  <script>
+		
 
-		$("a#inline").fancybox({
-			closeClick : true,
-			hideOnContentClick 		: true
-		}).trigger('click');
-		$('#Quote1').fadeIn(4000, function() {
-			$('#Quote2').fadeIn(2000, function() {
-				$('#clickToEnter').fadeIn(1000, function() {
-					$('.splitter2').fadeIn(1000, function() {
-						//ARRAYS
-						recurse(0);
-					});
-				});
-			});
-		});
-    });
-	
-	var arr = [ "img/splitterAnimation1.png", "img/splitterAnimation2.png", 
-						"img/splitterAnimation3.png", "img/splitterAnimation4.png" ];
-						
-	(function recurse(counter) {
-		var color = arr[counter];
-		 $(".runway").attr('src',color);
-		delete arr[counter];
-		arr.push(color);
-		setTimeout(function() {
-			recurse(counter + 1);
-		}, 500);
-	})(0);
-    </script>
-
-	
-	
-	
+  </script>
   <!-- scripts concatenated and minified via build script -->
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
