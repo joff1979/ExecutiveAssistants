@@ -16,13 +16,14 @@
   <meta name="description" content="">
 
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width">
+   <meta name="viewport" content="width=1040"/>
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+   <link rel="stylesheet" href="css/jquery-ui-1.8.20.custom.css" />
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
   <!-- All JavaScript at the bottom, except this Modernizr build.
@@ -46,7 +47,7 @@
 			<li class="sliding-element"><a href="Services.html">Services</a></li>
 			<li class="sliding-element"><a href="Biography.html">Biography</a></li>
 			<li class="sliding-element"><a href="Charges.html">Charges</a></li>
-			<li class="sliding-element"><a href="Contact.html">Contact</a></li>
+			<li class="sliding-element"><a id="contact" href="#">Contact</a></li>
 		</ul>
 	</nav>
 	
@@ -66,8 +67,82 @@
 				managing executive level.  </p>
 			</p>
 		</section>
-		<section class="twoColumn">
-			<img id="quotes" src="img/servequote.png" alt="Image" />
+		<section id="quotesSection" class="twoColumn">
+			<div id="accordion">			
+				<h3><a href="#">Administration Services</a></h3>
+				<div>
+					<ul>
+						<li>Diary administration</li>
+						<li>Diary administration</li>
+						<li>Email administration</li>
+						<li>Correspondence </li>
+						<li>Filing</li>
+						<li>Form filing</li>
+						<li>Finance administration</li>
+						<li>Database administration</li>
+						<li>Communication</li>
+						<li>Travel & Event administration</li>
+						<li>Project administration</li>
+					</ul>	
+				</div>
+				<h3><a href="#">Secretarial Support</a></h3>
+				<div>
+					<ul>
+						<li>Word Processing</li>
+						<li>Desktop Publishing</li>
+						<li>Diary Management</li>
+						<li>Email Management</li>
+						<li>Correspondence Management</li>
+						<li>Communication Management</li>
+						<li>Travel & Event Management</li>
+						<li>Project Management</li>
+					</ul>
+				</div>
+				<h3><a href="#">Accounting Support</a></h3>
+				<div>
+					<ul>
+						<li>Time Recording</li>
+						<li>Financial Reporting</li>
+						<li>Spreadsheets</li>
+						<li>Invoicing</li>
+						<li>Credit Control</li>
+						<li>General Book Keeping</li>
+						<li>Banking</li>
+					</ul>
+				</div>
+				<h3><a href="#">Marketing Support</a></h3>
+				<div>
+					<ul>
+						<li>Mailshots</li>
+						<li>Newsletters</li>
+						<li>Website support</li>
+						<li>Supporting social media sites</li>
+						<li>Research</li>
+						<li>Branding and Design</li>
+						<li>Communication</li>
+						<li>Marketing materials</li>
+						<li>Presentations</li>
+						<li>Christmas Cards</li>
+						<li>Change of circumstance</li>
+						<li>Events</li>
+						<li>Promotion</li>
+						<li>Database Management</li>
+						<li>Contact Maintenance</li>
+					</ul>
+				</div>
+				<h3><a href="#">Set up services</a></h3>
+				<div>
+					<p>Executive Assistants also provides consultant services to new companies and individuals setting up (as well as
+					already established companies), giving advice and providing assistance regards administrative systems as well as
+					guidance on IT infrastructure and branding.</p>
+				</div>
+				<h3><a href="#">Private Services</a></h3>
+				<div>
+					<p>Executive Assistants also provides private and personal support. From daily life administration, including household,
+					estate and/or letting management through to holiday planning. Working discreetly and efficiently providing a fully
+					tailored and bespoke service to meet the client's needs.</p>
+				</div>
+			</div>
 		</section>
 		
 
@@ -75,24 +150,82 @@
 	
 	<section id="links">
 		<a id="linkedin" href="http://uk.linkedin.com/pub/alexandra-reynolds/30/243/279">
-			<img src="http://www.linkedin.com/img/webpromo/btn_profile_greytxt_80x15.png" width="80" height="15" border="0" alt="View Jamie Rollinson's profile on LinkedIn">
+			<img src="img/linkedin_32.png"/>
 		</a>
-		<a href="http://http://www.facebook.com/ExecutiveAssistantsLtd">
-			<img src="img/facebook.jpg" />
+		<a href="http://http://www.facebook.com/ExecutiveAssistants">
+			<img src="img/facebook_32.png" />
 		</a>
-		
-		<a href="https://twitter.com/ExecAssistants" class="twitter-follow-button" data-show-count="false">Follow @ExecAssistants</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fjamie-and-kat-rollinson.co.uk%2FExecutiveAssistants%2Findex.html&region=follow_link&screen_name=ExecAssistants&source=followbutton&variant=2.0"" class="twitter-follow-button" data-show-count="false">
+			<img src="img/twitter_32.png" />
+		</a>
 	</section>
 	
+	<div id="dialog-form" title="Contact Us">
+		<p>Thank you for your interest in Executive Assistants. Please enter your comments or questions in the form below
+			and select the "Send Message" button to send your e-mail. </p>
+		<div class="formCol">
+			<form>
+			<fieldset>
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+				<label for="email">Email</label>
+				<input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
+				<label for="enquiry">Enquiry</label>
+				<textarea rows=5 id="message" class="text ui-widget-content ui-corner-all"></textarea>
+			</fieldset>
+			</form>
+		</div>
+		<div class="formCol">
+			<p>Alexandra Reynolds</br>
+			Director, Executive Assistants Ltd</p>
+			<ul>
+				<li>07967 21 21 27 </li>
+				<li><a href="alexandra.reynolds@executiveassistants.co.uk">alexandra.reynolds@executiveassistants.co.uk </a></li>
+				<li><a href="info@executiveassistants.co.uk">info@executiveassistants.co.uk</a></li>
+				<li><a href="www.executiveassistants.co.uk">www.executiveassistants.co.uk</a></li>
+			</ul>
+		</div>
+	</div>
 	 <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
 	
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-  <script>
-		
+  <script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
+  <script type="text/javascript">
+		$(function() {
+		$( "#accordion" ).accordion({
+			collapsible: true,
+			active: false,
+			autoHeight: false,
+			navigation: true
+		});
+		});
+    </script>
+  <script type="text/javascript">
+	
+	/*$(window).load(function() {
+		recurse(0);
+    });
+	
+	var arr = [ 'img/servequote1.png','img/servequote2.png','img/servequote3.png',
+	'img/servequote4.png','img/servequote5.png' ];
+						
+	(function recurse(counter) {
+		var image = arr[counter] ;
+		$("#quotes").fadeOut(500, 'swing', function() {
 
+			 $("#quotes").attr('src',image).fadeIn(2000,'swing').delay(1500);
+
+			});
+		
+		delete arr[counter];
+		arr.push(image);
+		setTimeout(function() {
+			recurse(counter + 1);
+		}, 4000);
+	})(0);
+	*/
   </script>
   <!-- scripts concatenated and minified via build script -->
   <script src="js/plugins.js"></script>
