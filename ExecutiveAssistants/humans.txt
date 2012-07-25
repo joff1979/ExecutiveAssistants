@@ -3,18 +3,18 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
+  Web Dev: Jamie Rollinson
+  Site: Jamie-and-Kat-Rollinson.co.uk	
+  Twitter: Joff1979
+  Location: London
 
 /* THANKS */
-  Names (& URL):
+  Names (& URL): The Internet :P
 
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
+  Components: Modernizr, jQuery, Contactable, FancyBox
+  Software: 
 
 
 

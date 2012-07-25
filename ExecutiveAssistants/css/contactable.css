@@ -1,0 +1,125 @@
+#contactable-inner {
+	background-image:url(../img/contact.png);
+	color:#FFFFFF;
+	background-color:#333333;
+	cursor:pointer;
+	height:102px;
+	right:0;
+	margin-right:-5px; 
+	*margin-right:-5px; 
+	overflow:hidden;
+	position:fixed;
+	*position:absolute;
+	text-indent:-100000px;
+	top:202px;
+	*margin-top:10px;
+	width:44px;
+	z-index:100000;
+}
+
+#contactable-contactForm {
+	background-color:white;
+	border:2px solid #8A294D;
+	color:#341923;
+	height:450px;
+	right:0;
+	margin-right:-400px;
+	*margin-right:-434px;
+	margin-top:-160px;
+	overflow:hidden;
+	padding-right:30px;
+	position:fixed;
+	top:300px;
+	width:360px;
+	*width:394px;
+	z-index:99;
+}
+
+form#contactable-contactForm input, textarea, select {
+	background:#FFFFFF none repeat scroll 0 0;
+	outline-style:none;
+	outline-width:medium;
+	width:325px;
+	padding:5px;
+	border:1px solid #dfdfdf;
+	font-family: georgia;
+	font-size:1em;
+	margin-bottom:10px;
+}
+
+form#contactable-contactForm .contactable-submit {
+	background: #8A294D none repeat scroll 0 0;
+	outline-style:none;
+	outline-width:medium;
+	width:325px;
+	padding:5px;
+	border:3px solid #FFFFFF;
+	outline-color:-moz-use-text-color;
+	font-family: georgia;
+	font-size:1em;
+	cursor:pointer;
+	color:#FFF;
+	text-transform:uppercase;
+	font-weight:bolder;
+	font-family:Helvetica;
+	margin-top:10px;
+}
+
+form#contactable-contactForm p {
+	width:325px;
+	font-size:0.9em;
+}
+
+form#contactable-contactForm .contactable-disclaimer {
+	*margin-Right:20px;
+}
+
+#contactable-contactForm .contactable-green {
+	color:	#F5410F;
+}
+
+#contactable-overlay {
+	background-color:#666666;
+	display:none;
+	height:100%;
+	right:0;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:0;
+} 
+.contactable-invalid { background-color: #EDBE9C; }
+
+#contactable-name.contactable-invalid { background-color: #EDBE9C; } 
+#contactable-email.contactable-invalid { background-color: #EDBE9C; }
+#contactable-comment.contactable-invalid { background-color: #EDBE9C; }
+
+form#contactable-contactForm label{
+	*margin-Right:20px;
+}
+
+form#contactable-contactForm #contactable-loading {
+	background: url(../img/ajax-loader.gif) no-repeat;
+	width:55px;
+	height:55px;
+	margin: 100px auto;
+	display:none;
+}
+
+#contactable-callback {
+	font-family: Calibri;
+	font-size:1.1em;
+	color: #872548;
+	width:325px;
+	margin: 100px auto;	
+	display:none;
+}
+
+
+.contactable-holder {
+	margin:0 auto;
+	margin-Left:20px;
+	padding-top:20px;	
+}	

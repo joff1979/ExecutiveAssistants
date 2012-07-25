@@ -10,20 +10,20 @@
 
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
        More info: h5bp.com/i/378 -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <title></title>
-  <meta name="description" content="">
-
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Services</title>
+	<meta name="description" content="Services">
+	<meta name="author" content="Jamie Rollinson">
+	<meta name="keywords" content="EA, Executive Assistant, PA, Personal Assistant, Administrator, Secretary, Virtual Assistant, Assistant, Management" />
+	<link rel="icon" type="image/png"   href="favicon.png">
   <!-- Mobile viewport optimized: h5bp.com/viewport -->
    <meta name="viewport" content="width=1040"/>
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
    <link rel="stylesheet" href="css/jquery-ui-1.8.20.custom.css" />
+    <link rel="stylesheet" href="css/contactable.css" type="text/css" />
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
   <!-- All JavaScript at the bottom, except this Modernizr build.
@@ -32,6 +32,7 @@
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
+	<div id="contactable"></div>
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
@@ -45,16 +46,15 @@
 		<ul id="sliding-navigation">
 			<li class="sliding-element"><a href="index.html">Home</a></li>
 			<li class="sliding-element"><a href="Services.html">Services</a></li>
-			<li class="sliding-element"><a href="Biography.html">Biography</a></li>
+			<li class="sliding-element"><a href="Biography.html">About Us</a></li>
 			<li class="sliding-element"><a href="Charges.html">Charges</a></li>
-			<li class="sliding-element"><a id="contact" href="#">Contact</a></li>
 		</ul>
 	</nav>
 	
 	<section id="container">
 		<section class="twoColumn">
 			<h2 class="mainHeader">Services</h2>
-			<p>Executive Assistants works <em class="bigText">virtually</em>, from remote locations, but can also provide
+			<p>Executive Assistants works <em class="bigText">virtually</em>, from remote locations, and also provides
 				on-site support on an ad hoc basis if and when required. </p>
 				
 			<p>	Services are fully <em class="bigText">tailored</em> to the clients' needs, the aim being to 
@@ -68,11 +68,13 @@
 			</p>
 		</section>
 		<section id="quotesSection" class="twoColumn">
+			<div id="quotePic">
+				<img id="quoteimg" src="img/quotesupport.png" alt="" />
+			</div>
 			<div id="accordion">			
-				<h3><a href="#">Administration Services</a></h3>
+				<h3><a class="quouteclick" id="quoteadmin" href="#">Administration Services</a></h3>
 				<div>
 					<ul>
-						<li>Diary administration</li>
 						<li>Diary administration</li>
 						<li>Email administration</li>
 						<li>Correspondence </li>
@@ -85,7 +87,7 @@
 						<li>Project administration</li>
 					</ul>	
 				</div>
-				<h3><a href="#">Secretarial Support</a></h3>
+				<h3><a class="quouteclick" id="quotesecretary" href="#">Secretarial Support</a></h3>
 				<div>
 					<ul>
 						<li>Word Processing</li>
@@ -98,7 +100,18 @@
 						<li>Project Management</li>
 					</ul>
 				</div>
-				<h3><a href="#">Accounting Support</a></h3>
+				<h3><a class="quouteclick" id="quotesupport" href="#">Travel Management</a></h3>
+				<div>
+					<ul>
+						<li>Booking Travel - Flights, Trains etc.</li>
+						<li>Hotel reservations</li>
+						<li>Visas</li>
+						<li>Transfers</li>
+						<li>Immigration - Fast Track</li>
+						<li>Currency</li>
+					</ul>
+				</div>
+				<h3><a class="quouteclick" id="quoteaccount" href="#">Accounting Support</a></h3>
 				<div>
 					<ul>
 						<li>Time Recording</li>
@@ -110,7 +123,7 @@
 						<li>Banking</li>
 					</ul>
 				</div>
-				<h3><a href="#">Marketing Support</a></h3>
+				<h3><a class="quouteclick" id="quotemarketing" href="#">Marketing Support</a></h3>
 				<div>
 					<ul>
 						<li>Mailshots</li>
@@ -130,16 +143,17 @@
 						<li>Contact Maintenance</li>
 					</ul>
 				</div>
-				<h3><a href="#">Set up services</a></h3>
+				<h3><a class="quouteclick" id="quotesupport" href="#">Set up services</a></h3>
 				<div>
-					<p>Executive Assistants also provides consultant services to new companies and individuals setting up (as well as
-					already established companies), giving advice and providing assistance regards administrative systems as well as
-					guidance on IT infrastructure and branding.</p>
+					<p>Executive Assistants provides support and consultant services to new companies and individuals setting up (as well as those
+					already established). It can establish companies with Companies House, register domain names and provide 
+					advice and assistance regards administration systems, IT infrastructure and branding (including producing business 
+					cards and other company documentation).</p>
 				</div>
-				<h3><a href="#">Private Services</a></h3>
+				<h3><a class="quouteclick" id="quotesupport" href="#">Private Services</a></h3>
 				<div>
-					<p>Executive Assistants also provides private and personal support. From daily life administration, including household,
-					estate and/or letting management through to holiday planning. Working discreetly and efficiently providing a fully
+					<p>Executive Assistants provides private and personal support. From daily life administration, including household,
+					estate and/or letting management through to holiday planning. Working discreetly and efficiently, providing a fully
 					tailored and bespoke service to meet the client's needs.</p>
 				</div>
 			</div>
@@ -152,7 +166,7 @@
 		<a id="linkedin" href="http://uk.linkedin.com/pub/alexandra-reynolds/30/243/279">
 			<img src="img/linkedin_32.png"/>
 		</a>
-		<a href="http://http://www.facebook.com/ExecutiveAssistants">
+		<a href="http://facebook.com/pages/Executive-Assistants-Ltd/162350287223965">
 			<img src="img/facebook_32.png" />
 		</a>
 		<a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fjamie-and-kat-rollinson.co.uk%2FExecutiveAssistants%2Findex.html&region=follow_link&screen_name=ExecAssistants&source=followbutton&variant=2.0"" class="twitter-follow-button" data-show-count="false">
@@ -160,82 +174,61 @@
 		</a>
 	</section>
 	
-	<div id="dialog-form" title="Contact Us">
-		<p>Thank you for your interest in Executive Assistants. Please enter your comments or questions in the form below
-			and select the "Send Message" button to send your e-mail. </p>
-		<div class="formCol">
-			<form>
-			<fieldset>
-				<label for="name">Name</label>
-				<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
-				<label for="email">Email</label>
-				<input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
-				<label for="enquiry">Enquiry</label>
-				<textarea rows=5 id="message" class="text ui-widget-content ui-corner-all"></textarea>
-			</fieldset>
-			</form>
-		</div>
-		<div class="formCol">
-			<p>Alexandra Reynolds</br>
-			Director, Executive Assistants Ltd</p>
-			<ul>
-				<li>07967 21 21 27 </li>
-				<li><a href="alexandra.reynolds@executiveassistants.co.uk">alexandra.reynolds@executiveassistants.co.uk </a></li>
-				<li><a href="info@executiveassistants.co.uk">info@executiveassistants.co.uk</a></li>
-				<li><a href="www.executiveassistants.co.uk">www.executiveassistants.co.uk</a></li>
-			</ul>
-		</div>
-	</div>
+	<section id="contactInfo">
+		<p><a href="mailto:info@executiveassistants.co.uk">info@executiveassistants.co.uk	</a></p>
+	</section>
+
 	 <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
 	
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-  <script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
-  <script type="text/javascript">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.contactable.js"></script>
+	<script type="text/javascript">
+	   $(function(){
+			$( "#accordion" ).accordion({
+				collapsible: true,
+				active: false,
+				autoHeight: false,
+				navigation: true
+			});
+			$('#contactable').contactable({
+				message : 'Inquiry',
+				recievedMsg : 'Thankyou for your Inquiry, we will respond as soon as possible',
+				disclaimer: 'If you have any questions or comments, or if you would like a quote, please use the form above and we will get back to you as soon as possible'
+			});
+		});
+	</script>
+	<script type="text/javascript">
 		$(function() {
+			$(".quouteclick" ).click(function() {
+				var quote = 'img/' +  $(this).attr('id') + '.png';
+				$('#quoteimg').attr('src', quote);
+				});
+			});
+	</script>
+	<script type="text/javascript">
+		$(function(){		
 		$( "#accordion" ).accordion({
 			collapsible: true,
 			active: false,
 			autoHeight: false,
 			navigation: true
 		});
-		});
-    </script>
-  <script type="text/javascript">
+	});
+	</script>
 	
-	/*$(window).load(function() {
-		recurse(0);
-    });
-	
-	var arr = [ 'img/servequote1.png','img/servequote2.png','img/servequote3.png',
-	'img/servequote4.png','img/servequote5.png' ];
-						
-	(function recurse(counter) {
-		var image = arr[counter] ;
-		$("#quotes").fadeOut(500, 'swing', function() {
-
-			 $("#quotes").attr('src',image).fadeIn(2000,'swing').delay(1500);
-
-			});
-		
-		delete arr[counter];
-		arr.push(image);
-		setTimeout(function() {
-			recurse(counter + 1);
-		}, 4000);
-	})(0);
-	*/
-  </script>
-  <!-- scripts concatenated and minified via build script -->
+    <!-- scripts concatenated and minified via build script -->
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
+  
   <!-- end scripts -->
 
   <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet -->
   <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    var _gaq=[['_setAccount','UA-33661429-1'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));

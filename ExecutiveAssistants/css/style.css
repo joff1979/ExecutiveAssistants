@@ -34,7 +34,7 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 
 html, button, input, select, textarea { font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; color: #222; }
 
-body { margin: 0; font-size: 1em; line-height: 1.4; width:1024px }
+body { margin: 0; font-size: 1em; line-height: 1.4; width:960px }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -229,6 +229,7 @@ td { vertical-align: top; }
 	}
 	
  section, nav{
+	width:960px;
 	float: left;
 	}
   
@@ -282,9 +283,9 @@ nav ul li {
 }  
 
 nav ul li a, nav ul li a:visited{
-	width:200px;
+	width:239px;
 	display:inline-block;
-	color:#7F5151;
+	color:#80173E;
 	font-size: 20px;
 	font-weight: bold;
 	
@@ -292,7 +293,7 @@ nav ul li a, nav ul li a:visited{
 
 nav ul li a:hover {  
 	color: white;  
-	background:#7F5151;
+	background:#80173E;
 	
 }  
 
@@ -313,7 +314,9 @@ nav ul li a:hover {
 
 #links
 {
+	width:400px;
 	bottom:0px;
+	
 }
 
 #links a img, #links iframe
@@ -322,7 +325,7 @@ nav ul li a:hover {
 	}
 
 #container{
-	width:1004px;
+	width:960px;
 	/*border-style:solid;
 	border-width:0px 10px 10px 10px;
 	border-color: #f4d7d7;
@@ -407,9 +410,9 @@ nav ul li a:hover {
 
 #clickToEnter
 {
-	float: right;
-	display:none;
-	Padding: 20px 0 0 0 0;
+	position:absolute;
+	right: 150px;
+	bottom:40px;
 }
 
 .splitter2
@@ -422,7 +425,7 @@ nav ul li a:hover {
 
 #fullContainer
 {
-	width:950px;
+	width:960px;
 	display:none;
 	height:500px;
 
@@ -453,7 +456,7 @@ display:none;
 
 .twoColumn
 {
-	width:502px;
+	width:480px;
 }
 
 #container .twoColumn p
@@ -475,14 +478,19 @@ display:none;
 #quotesSection 
 {
 	margin:20px 0px 0px 20px;
-	width:460px;
+	width:350px;
 	
 }
 
+#biographySection
+{
+	margin:10px 0px 0px 20px;
+	width:400px;
+}
 #chargesSecondCol
 {
-	margin:60px 0px 0px 20px;
-	width:460px;
+	margin:20px 0px 0px 20px;
+	width:350px;
 }
 	
 /* Biography */
@@ -500,20 +508,55 @@ display:none;
 	float:left;
 	list-style-type:none;
 	font-size: 18px;
+	width:100%;
 	
 	}
 	
 #accordion
 {
 	padding-left: 10px;
+	margin: 30px 30px 10px 30px;
+
 	}
 
-#accordion h3
+#accordion h3 ,	#accordion p
 {
-	font-size:22px;
-	
-	font-weight:bold;
+	font-size:16px;
 	}
+
+#contactCard h3
+{
+		
+		}
+
+#contactInfo
+{
+	float:right;
+	width:200px;
+	}
+	
+	
+#contact
+{
+	color:#C05C81;
+}
+
+#quotePic
+{
+	margin: 10px;
+}
+
+
+.ui-widget-content .biolink 
+{
+	color:#C05C81;
+}
+
+#contactInfo a
+{
+	color:#872548;
+}
+
 
 .formCol
 {
